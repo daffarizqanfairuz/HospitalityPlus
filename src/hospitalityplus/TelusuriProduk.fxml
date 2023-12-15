@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="hospitalityplus.TelusuriProdukController">
+   <children>
+      <Label layoutX="27.0" layoutY="80.0" text="Pilih Layanan Tambahan" />
+      <MenuButton layoutX="212.0" layoutY="76.0" mnemonicParsing="false" text="Pilih Servis">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Sauna" />
+          <MenuItem mnemonicParsing="false" text="Spa" />
+            <MenuItem mnemonicParsing="false" text="Tennis Court" />
+        </items>
+      </MenuButton>
+      <Label fx:id="lblJenis1" layoutX="154.0" layoutY="27.0" text="Label" />
+   </children>
+</AnchorPane>
