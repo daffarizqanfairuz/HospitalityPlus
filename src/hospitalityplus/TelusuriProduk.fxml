@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="hospitalityplus.TelusuriProdukController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hospitalityplus.TelusuriProdukController">
    <children>
-      <Label layoutX="27.0" layoutY="80.0" text="Pilih Layanan Tambahan" />
-      <MenuButton layoutX="212.0" layoutY="76.0" mnemonicParsing="false" text="Pilih Servis">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Sauna" />
-          <MenuItem mnemonicParsing="false" text="Spa" />
-            <MenuItem mnemonicParsing="false" text="Tennis Court" />
-        </items>
-      </MenuButton>
-      <Label fx:id="lblJenis1" layoutX="154.0" layoutY="27.0" text="Label" />
+      <Label layoutX="26.0" layoutY="139.0" text="Pilih Layanan Tambahan" />
+      <Label layoutX="229.0" layoutY="24.0" text="Telusuri Produk Kami">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="97.0" text="Nomor Ruangan" />
+      <Label fx:id="lblNomorKamar" layoutX="180.0" layoutY="97.0" text="Nomor Ruangan" />
+      <TableView fx:id="tvProduk" layoutX="220.0" layoutY="177.0" prefHeight="303.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colIdLayanan" prefWidth="105.0" text="Id Layanan" />
+          <TableColumn fx:id="colNamaLayanan" prefWidth="203.0" text="Nama Layanan" />
+            <TableColumn fx:id="colDeskripsi" prefWidth="207.0" text="Deskripsi" />
+            <TableColumn fx:id="colHarga" prefWidth="124.0" text="Harga" />
+        </columns>
+      </TableView>
+      <Button layoutX="294.0" layoutY="135.0" mnemonicParsing="false" text="Pilih" />
+      <TextField fx:id="tfLayananTambahan" layoutX="180.0" layoutY="135.0" prefHeight="25.0" prefWidth="88.0" />
+      <Button fx:id="btnSkip" layoutX="562.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleButtonSkip" text="Skip" />
    </children>
 </AnchorPane>

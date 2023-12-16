@@ -50,7 +50,7 @@ public class kamarDB {
             ResultSet rs = CONN.createStatement().executeQuery(query);
            
             while(rs.next()) {
-                kamar temp = new kamar(rs.getString("nomor_kamar"), rs.getString("jenis_kamar"), rs.getString("ketersediaan"));
+                kamar temp = new kamar(rs.getString("nomorKamar"), rs.getString("jenisKamar"), rs.getString("ketersediaan"));
                 kmr.add(temp);
             }
         } catch (SQLException ex) {

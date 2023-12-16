@@ -6,22 +6,31 @@
 package hospitalityplus;
 
 public class kamar {
-    private String nomor_kamar;
-    private String jenis_kamar;
+    private String nomorKamar;
+    private String jenisKamar;
     private String ketersediaan;
 
-    public kamar(String nomor_kamar, String jenis_kamar, String ketersediaan) {
-        this.nomor_kamar = nomor_kamar;
-        this.jenis_kamar = jenis_kamar;
+    public kamar(String nomorKamar, String jenisKamar, String ketersediaan) {
+        this.nomorKamar = nomorKamar;
+        this.jenisKamar = jenisKamar;
         this.ketersediaan = ketersediaan;
     }
-
-    public void setNomorKamar(String nomor_kamar) {
-        this.nomor_kamar = nomor_kamar;
+    
+    public kamar(String nomorKamar, String jenisKamar) {
+        this.nomorKamar = nomorKamar;
+        this.jenisKamar = jenisKamar;
+    }
+    
+    public kamar(String nomorKamar){
+        this.nomorKamar = nomorKamar;
+    }
+    
+    public void setNomorKamar(String nomorKamar) {
+        this.nomorKamar = nomorKamar;
     }
 
-    public void setDetailKamar(String jenis_kamar) {
-        this.jenis_kamar = jenis_kamar;
+    public void setDetailKamar(String jenisKamar) {
+        this.jenisKamar = jenisKamar;
     }
 
     public void setKetersediaan(String ketersediaan) {
@@ -29,11 +38,11 @@ public class kamar {
     }
 
     public String getNomorKamar() {
-        return nomor_kamar;
+        return nomorKamar;
     }
 
     public String getJenisKamar() {
-        return jenis_kamar;
+        return jenisKamar;
     }
 //
     public String getKetersediaan() {
